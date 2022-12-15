@@ -4,23 +4,21 @@
   box-sizing: border-box;
 }
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400|Barlow+Semi+Condensed:400');
 
-html {
-  font-size: 100%;
-} /*16px*/
+html {font-size: 125%;} /*20px*/
 
 :root {
   /* colors */
-  --primary-100: #e2e0ff;
-  --primary-200: #c1beff;
-  --primary-300: #a29dff;
-  --primary-400: #837dff;
-  --primary-500: #645cff;
-  --primary-600: #504acc;
-  --primary-700: #3c3799;
-  --primary-800: #282566;
-  --primary-900: #141233;
+  --primary-100: #dbe0f5;
+  --primary-200: #bfc8ee;
+  --primary-300: #a3b0e6;
+  --primary-400: #6b7fd7;
+  --primary-500: #4f67cf;
+  --primary-600: #3550c5;
+  --primary-700: #2e45a9;
+  --primary-800: #26398d;
+  --primary-900:#1f2e71;
 
   /* grey */
   --grey-50: #f8fafc;
@@ -33,7 +31,8 @@ html {
   --grey-700: #334155;
   --grey-800: #1e293b;
   --grey-900: #0f172a;
-  /* rest of the colors */
+  
+  /* rest of the colors - for alerts from bootstrap*/
   --black: #222;
   --white: #fff;
   --red-light: #f8d7da;
@@ -42,9 +41,9 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: "Roboto", sans-serif;
-  --bodyFont: "Nunito", sans-serif;
-  --small-text: 0.875rem;
+  --headingFont: 'Barlow Semi Condensed', sans-serif;
+  --bodyFont: 'Montserrat', sans-serif;
+  --small-text: 0.7em;
   --extra-small-text: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
@@ -66,11 +65,11 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
+  background: white;
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
-  color: var(--textColor);
+  color: #000000;
 }
 
 p {
@@ -78,18 +77,14 @@ p {
   max-width: 40em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   margin-bottom: 1.38rem;
   font-family: var(--headingFont);
   font-weight: 400;
   line-height: 1.3;
   text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
+
 }
 
 h1 {
@@ -97,30 +92,21 @@ h1 {
   font-size: 3.052rem;
 }
 
-h2 {
-  font-size: 2.441rem;
-}
+h2 {font-size: 2.441rem;}
 
-h3 {
-  font-size: 1.953rem;
-}
+h3 {font-size: 1.953rem;}
 
-h4 {
-  font-size: 1.563rem;
-}
+h4 {font-size: 1.563rem;}
 
-h5 {
-  font-size: 1.25rem;
-}
+h5 {font-size: 1.25rem;}
 
-small,
-.text-small {
-  font-size: var(--small-text);
-}
+small, .text_small {font-size: var(--smallText);}
 
+/*removes underline from links*/
 a {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
