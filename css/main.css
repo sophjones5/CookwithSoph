@@ -464,12 +464,8 @@ ul {
   .recipe p{
     font-size: 0.85rem;
   }
-  .tags-container{
-    order: 0;
-  }
   .tags-list{
-    grid-template-columns: 1fr;
-    background-color: var(--primary-500);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -478,6 +474,9 @@ ul {
   }
   .recipe p{
     font-size: 1.15rem;
+  }
+  .tags-list{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
